@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{74439555-d5fd-41a2-9bb8-71641dd4363a}</ProjectGuid>
+    <RootNamespace>MIDS</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <Optimization>MaxSpeed</Optimization>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Graph.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MaxSpeed</Optimization>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Speed</FavorSizeOrSpeed>
+      <LanguageStandard Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">stdcpp20</LanguageStandard>
+      <LanguageStandard_C Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">stdc17</LanguageStandard_C>
+    </ClCompile>
+    <ClCompile Include="MIDS.cpp" />
+    <ClCompile Include="Solver.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Graph.h" />
+    <ClInclude Include="Solver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Datasets\BHOSLIB\frb100-40.clq" />
+    <None Include="Datasets\BHOSLIB\frb30-15-1.clq" />
+    <None Include="Datasets\BHOSLIB\frb30-15-2.clq" />
+    <None Include="Datasets\BHOSLIB\frb30-15-3.clq" />
+    <None Include="Datasets\BHOSLIB\frb30-15-4.clq" />
+    <None Include="Datasets\BHOSLIB\frb30-15-5.clq" />
+    <None Include="Datasets\BHOSLIB\frb35-17-1.clq" />
+    <None Include="Datasets\BHOSLIB\frb35-17-2.clq" />
+    <None Include="Datasets\BHOSLIB\frb35-17-3.clq" />
+    <None Include="Datasets\BHOSLIB\frb35-17-4.clq" />
+    <None Include="Datasets\BHOSLIB\frb35-17-5.clq" />
+    <None Include="Datasets\BHOSLIB\frb40-19-1.clq" />
+    <None Include="Datasets\BHOSLIB\frb40-19-2.clq" />
+    <None Include="Datasets\BHOSLIB\frb40-19-3.clq" />
+    <None Include="Datasets\BHOSLIB\frb40-19-4.clq" />
+    <None Include="Datasets\BHOSLIB\frb40-19-5.clq" />
+    <None Include="Datasets\BHOSLIB\frb45-21-1.clq" />
+    <None Include="Datasets\BHOSLIB\frb45-21-2.clq" />
+    <None Include="Datasets\BHOSLIB\frb45-21-3.clq" />
+    <None Include="Datasets\BHOSLIB\frb45-21-4.clq" />
+    <None Include="Datasets\BHOSLIB\frb45-21-5.clq" />
+    <None Include="Datasets\BHOSLIB\frb50-23-1.clq" />
+    <None Include="Datasets\BHOSLIB\frb50-23-2.clq" />
+    <None Include="Datasets\BHOSLIB\frb50-23-3.clq" />
+    <None Include="Datasets\BHOSLIB\frb50-23-4.clq" />
+    <None Include="Datasets\BHOSLIB\frb50-23-5.clq" />
+    <None Include="Datasets\BHOSLIB\frb53-24-1.clq" />
+    <None Include="Datasets\BHOSLIB\frb53-24-2.clq" />
+    <None Include="Datasets\BHOSLIB\frb53-24-3.clq" />
+    <None Include="Datasets\BHOSLIB\frb53-24-4.clq" />
+    <None Include="Datasets\BHOSLIB\frb53-24-5.clq" />
+    <None Include="Datasets\BHOSLIB\frb59-26-1.clq" />
+    <None Include="Datasets\BHOSLIB\frb59-26-2.clq" />
+    <None Include="Datasets\BHOSLIB\frb59-26-3.clq" />
+    <None Include="Datasets\BHOSLIB\frb59-26-4.clq" />
+    <None Include="Datasets\BHOSLIB\frb59-26-5.clq" />
+    <None Include="Datasets\DIMACS\brock200_1.mis" />
+    <None Include="Datasets\DIMACS\brock200_2.mis" />
+    <None Include="Datasets\DIMACS\brock200_3.mis" />
+    <None Include="Datasets\DIMACS\brock200_4.mis" />
+    <None Include="Datasets\DIMACS\brock400_1.mis" />
+    <None Include="Datasets\DIMACS\brock400_2.mis" />
+    <None Include="Datasets\DIMACS\brock400_3.mis" />
+    <None Include="Datasets\DIMACS\brock400_4.mis" />
+    <None Include="Datasets\DIMACS\brock800_1.mis" />
+    <None Include="Datasets\DIMACS\brock800_2.mis" />
+    <None Include="Datasets\DIMACS\brock800_3.mis" />
+    <None Include="Datasets\DIMACS\brock800_4.mis" />
+    <None Include="Datasets\DIMACS\c-fat200-1.mis" />
+    <None Include="Datasets\DIMACS\c-fat200-2.mis" />
+    <None Include="Datasets\DIMACS\c-fat200-5.mis" />
+    <None Include="Datasets\DIMACS\c-fat500-1.mis" />
+    <None Include="Datasets\DIMACS\c-fat500-10.mis" />
+    <None Include="Datasets\DIMACS\c-fat500-2.mis" />
+    <None Include="Datasets\DIMACS\c-fat500-5.mis" />
+    <None Include="Datasets\DIMACS\C1000.9.mis" />
+    <None Include="Datasets\DIMACS\C125.9.mis" />
+    <None Include="Datasets\DIMACS\C2000.5.mis" />
+    <None Include="Datasets\DIMACS\C2000.9.mis" />
+    <None Include="Datasets\DIMACS\C250.9.mis" />
+    <None Include="Datasets\DIMACS\C4000.5.mis" />
+    <None Include="Datasets\DIMACS\C500.9.mis" />
+    <None Include="Datasets\DIMACS\DSJC1000.5.mis" />
+    <None Include="Datasets\DIMACS\DSJC500.5.mis" />
+    <None Include="Datasets\DIMACS\gen200_p0.9_44.mis" />
+    <None Include="Datasets\DIMACS\gen200_p0.9_55.mis" />
+    <None Include="Datasets\DIMACS\gen400_p0.9_55.mis" />
+    <None Include="Datasets\DIMACS\gen400_p0.9_65.mis" />
+    <None Include="Datasets\DIMACS\gen400_p0.9_75.mis" />
+    <None Include="Datasets\DIMACS\hamming10-2.mis" />
+    <None Include="Datasets\DIMACS\hamming10-4.mis" />
+    <None Include="Datasets\DIMACS\hamming6-2.mis" />
+    <None Include="Datasets\DIMACS\hamming6-4.mis" />
+    <None Include="Datasets\DIMACS\hamming8-2.mis" />
+    <None Include="Datasets\DIMACS\hamming8-4.mis" />
+    <None Include="Datasets\DIMACS\johnson16-2-4.mis" />
+    <None Include="Datasets\DIMACS\johnson32-2-4.mis" />
+    <None Include="Datasets\DIMACS\johnson8-2-4.mis" />
+    <None Include="Datasets\DIMACS\johnson8-4-4.mis" />
+    <None Include="Datasets\DIMACS\keller4.mis" />
+    <None Include="Datasets\DIMACS\keller5.mis" />
+    <None Include="Datasets\DIMACS\keller6.mis" />
+    <None Include="Datasets\DIMACS\MANN_a27.mis" />
+    <None Include="Datasets\DIMACS\MANN_a45.mis" />
+    <None Include="Datasets\DIMACS\MANN_a81.mis" />
+    <None Include="Datasets\DIMACS\MANN_a9.mis" />
+    <None Include="Datasets\DIMACS\p_hat1000-1.mis" />
+    <None Include="Datasets\DIMACS\p_hat1000-2.mis" />
+    <None Include="Datasets\DIMACS\p_hat1000-3.mis" />
+    <None Include="Datasets\DIMACS\p_hat1500-1.mis" />
+    <None Include="Datasets\DIMACS\p_hat1500-2.mis" />
+    <None Include="Datasets\DIMACS\p_hat1500-3.mis" />
+    <None Include="Datasets\DIMACS\p_hat300-1.mis" />
+    <None Include="Datasets\DIMACS\p_hat300-2.mis" />
+    <None Include="Datasets\DIMACS\p_hat300-3.mis" />
+    <None Include="Datasets\DIMACS\p_hat500-1.mis" />
+    <None Include="Datasets\DIMACS\p_hat500-2.mis" />
+    <None Include="Datasets\DIMACS\p_hat500-3.mis" />
+    <None Include="Datasets\DIMACS\p_hat700-1.mis" />
+    <None Include="Datasets\DIMACS\p_hat700-2.mis" />
+    <None Include="Datasets\DIMACS\p_hat700-3.mis" />
+    <None Include="Datasets\DIMACS\san1000.mis" />
+    <None Include="Datasets\DIMACS\san200_0.7_1.mis" />
+    <None Include="Datasets\DIMACS\san200_0.7_2.mis" />
+    <None Include="Datasets\DIMACS\san200_0.9_1.mis" />
+    <None Include="Datasets\DIMACS\san200_0.9_2.mis" />
+    <None Include="Datasets\DIMACS\san200_0.9_3.mis" />
+    <None Include="Datasets\DIMACS\san400_0.5_1.mis" />
+    <None Include="Datasets\DIMACS\san400_0.7_1.mis" />
+    <None Include="Datasets\DIMACS\san400_0.7_2.mis" />
+    <None Include="Datasets\DIMACS\san400_0.7_3.mis" />
+    <None Include="Datasets\DIMACS\san400_0.9_1.mis" />
+    <None Include="Datasets\DIMACS\sanr200_0.7.mis" />
+    <None Include="Datasets\DIMACS\sanr200_0.9.mis" />
+    <None Include="Datasets\DIMACS\sanr400_0.5.mis" />
+    <None Include="Datasets\DIMACS\sanr400_0.7.mis" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Arquivos de Origem">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Arquivos de Cabeçalho">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Arquivos de Recurso">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Arquivos de Recurso\DIMACS">
+      <UniqueIdentifier>{0cd1fdba-218a-47ce-82a3-1c848f43c436}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Recurso\BHOSLIB">
+      <UniqueIdentifier>{f36800f1-fea1-4039-9dbe-c2b817239758}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MIDS.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="Graph.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="Solver.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Graph.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="Solver.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Datasets\DIMACS\brock200_1.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\brock200_2.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\brock200_3.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\brock200_4.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\brock400_1.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\brock400_2.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\brock400_3.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\brock400_4.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\brock800_1.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\brock800_2.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\brock800_3.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\brock800_4.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\C125.9.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\C250.9.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\C500.9.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\C1000.9.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\C2000.5.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\C2000.9.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\C4000.5.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\c-fat200-1.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\c-fat200-2.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\c-fat200-5.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\c-fat500-1.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\c-fat500-2.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\c-fat500-5.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\c-fat500-10.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\DSJC500.5.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\DSJC1000.5.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\gen200_p0.9_44.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\gen200_p0.9_55.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\gen400_p0.9_55.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\gen400_p0.9_65.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\gen400_p0.9_75.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\hamming6-2.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\hamming6-4.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\hamming8-2.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\hamming8-4.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\hamming10-2.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\hamming10-4.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\johnson8-2-4.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\johnson8-4-4.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\johnson16-2-4.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\johnson32-2-4.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\keller4.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\keller5.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\keller6.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\MANN_a9.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\MANN_a27.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\MANN_a45.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\MANN_a81.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\p_hat300-1.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\p_hat300-2.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\p_hat300-3.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\p_hat500-1.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\p_hat500-2.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\p_hat500-3.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\p_hat700-1.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\p_hat700-2.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\p_hat700-3.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\p_hat1000-1.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\p_hat1000-2.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\p_hat1000-3.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\p_hat1500-1.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\p_hat1500-2.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\p_hat1500-3.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\san200_0.7_1.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\san200_0.7_2.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\san200_0.9_1.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\san200_0.9_2.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\san200_0.9_3.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\san400_0.5_1.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\san400_0.7_1.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\san400_0.7_2.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\san400_0.7_3.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\san400_0.9_1.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\san1000.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\sanr200_0.7.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\sanr200_0.9.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\sanr400_0.5.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\DIMACS\sanr400_0.7.mis">
+      <Filter>Arquivos de Recurso\DIMACS</Filter>
+    </None>
+    <None Include="Datasets\BHOSLIB\frb30-15-1.clq">
+      <Filter>Arquivos de Recurso\BHOSLIB</Filter>
+    </None>
+    <None Include="Datasets\BHOSLIB\frb30-15-2.clq">
+      <Filter>Arquivos de Recurso\BHOSLIB</Filter>
+    </None>
+    <None Include="Datasets\BHOSLIB\frb30-15-3.clq">
+      <Filter>Arquivos de Recurso\BHOSLIB</Filter>
+    </None>
+    <None Include="Datasets\BHOSLIB\frb30-15-4.clq">
+      <Filter>Arquivos de Recurso\BHOSLIB</Filter>
+    </None>
+    <None Include="Datasets\BHOSLIB\frb30-15-5.clq">
+      <Filter>Arquivos de Recurso\BHOSLIB</Filter>
+    </None>
+    <None Include="Datasets\BHOSLIB\frb35-17-1.clq">
+      <Filter>Arquivos de Recurso\BHOSLIB</Filter>
+    </None>
+    <None Include="Datasets\BHOSLIB\frb35-17-2.clq">
+      <Filter>Arquivos de Recurso\BHOSLIB</Filter>
+    </None>
+    <None Include="Datasets\BHOSLIB\frb35-17-3.clq">
+      <Filter>Arquivos de Recurso\BHOSLIB</Filter>
+    </None>
+    <None Include="Datasets\BHOSLIB\frb35-17-4.clq">
+      <Filter>Arquivos de Recurso\BHOSLIB</Filter>
+    </None>
+    <None Include="Datasets\BHOSLIB\frb35-17-5.clq">
+      <Filter>Arquivos de Recurso\BHOSLIB</Filter>
+    </None>
+    <None Include="Datasets\BHOSLIB\frb40-19-1.clq">
+      <Filter>Arquivos de Recurso\BHOSLIB</Filter>
+    </None>
+    <None Include="Datasets\BHOSLIB\frb40-19-2.clq">
+      <Filter>Arquivos de Recurso\BHOSLIB</Filter>
+    </None>
+    <None Include="Datasets\BHOSLIB\frb40-19-3.clq">
+      <Filter>Arquivos de Recurso\BHOSLIB</Filter>
+    </None>
+    <None Include="Datasets\BHOSLIB\frb40-19-4.clq">
+      <Filter>Arquivos de Recurso\BHOSLIB</Filter>
+    </None>
+    <None Include="Datasets\BHOSLIB\frb40-19-5.clq">
+      <Filter>Arquivos de Recurso\BHOSLIB</Filter>
+    </None>
+    <None Include="Datasets\BHOSLIB\frb45-21-1.clq">
+      <Filter>Arquivos de Recurso\BHOSLIB</Filter>
+    </None>
+    <None Include="Datasets\BHOSLIB\frb45-21-2.clq">
+      <Filter>Arquivos de Recurso\BHOSLIB</Filter>
+    </None>
+    <None Include="Datasets\BHOSLIB\frb45-21-3.clq">
+      <Filter>Arquivos de Recurso\BHOSLIB</Filter>
+    </None>
+    <None Include="Datasets\BHOSLIB\frb45-21-4.clq">
+      <Filter>Arquivos de Recurso\BHOSLIB</Filter>
+    </None>
+    <None Include="Datasets\BHOSLIB\frb45-21-5.clq">
+      <Filter>Arquivos de Recurso\BHOSLIB</Filter>
+    </None>
+    <None Include="Datasets\BHOSLIB\frb50-23-1.clq">
+      <Filter>Arquivos de Recurso\BHOSLIB</Filter>
+    </None>
+    <None Include="Datasets\BHOSLIB\frb50-23-2.clq">
+      <Filter>Arquivos de Recurso\BHOSLIB</Filter>
+    </None>
+    <None Include="Datasets\BHOSLIB\frb50-23-3.clq">
+      <Filter>Arquivos de Recurso\BHOSLIB</Filter>
+    </None>
+    <None Include="Datasets\BHOSLIB\frb50-23-4.clq">
+      <Filter>Arquivos de Recurso\BHOSLIB</Filter>
+    </None>
+    <None Include="Datasets\BHOSLIB\frb50-23-5.clq">
+      <Filter>Arquivos de Recurso\BHOSLIB</Filter>
+    </None>
+    <None Include="Datasets\BHOSLIB\frb53-24-1.clq">
+      <Filter>Arquivos de Recurso\BHOSLIB</Filter>
+    </None>
+    <None Include="Datasets\BHOSLIB\frb53-24-2.clq">
+      <Filter>Arquivos de Recurso\BHOSLIB</Filter>
+    </None>
+    <None Include="Datasets\BHOSLIB\frb53-24-3.clq">
+      <Filter>Arquivos de Recurso\BHOSLIB</Filter>
+    </None>
+    <None Include="Datasets\BHOSLIB\frb53-24-4.clq">
+      <Filter>Arquivos de Recurso\BHOSLIB</Filter>
+    </None>
+    <None Include="Datasets\BHOSLIB\frb53-24-5.clq">
+      <Filter>Arquivos de Recurso\BHOSLIB</Filter>
+    </None>
+    <None Include="Datasets\BHOSLIB\frb59-26-1.clq">
+      <Filter>Arquivos de Recurso\BHOSLIB</Filter>
+    </None>
+    <None Include="Datasets\BHOSLIB\frb59-26-2.clq">
+      <Filter>Arquivos de Recurso\BHOSLIB</Filter>
+    </None>
+    <None Include="Datasets\BHOSLIB\frb59-26-3.clq">
+      <Filter>Arquivos de Recurso\BHOSLIB</Filter>
+    </None>
+    <None Include="Datasets\BHOSLIB\frb59-26-4.clq">
+      <Filter>Arquivos de Recurso\BHOSLIB</Filter>
+    </None>
+    <None Include="Datasets\BHOSLIB\frb59-26-5.clq">
+      <Filter>Arquivos de Recurso\BHOSLIB</Filter>
+    </None>
+    <None Include="Datasets\BHOSLIB\frb100-40.clq">
+      <Filter>Arquivos de Recurso\BHOSLIB</Filter>
+    </None>
+  </ItemGroup>
+</Project>
