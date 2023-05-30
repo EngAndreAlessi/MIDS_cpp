@@ -18,17 +18,17 @@ struct Graph
 	// Adjacency list
 	AdjList adj_list;
 	// Number of vertices
-	int n;
+	std::size_t n;
 	// Number of edges
-	int m;
+	std::size_t m;
 	// Instance name
 	std::string instance_name;
 	// Maximum vertex degree
-	int max_degree;
+	std::size_t max_degree;
 	// Minimum vertex degree
-	int min_degree;
+	std::size_t min_degree;
 
-	// Graph methods
+	// Graph functions
 	
 	// Constructor method, will read a .mis or .clq file and build the graph
 	Graph(const std::string);
@@ -38,6 +38,8 @@ struct Graph
 	void printGraphInfo();
 	// Remove a vertex from the graph
 	void removeVertex(const int);
+	// Gets one of the vertices with max_degree
+	int getMaxDegreeVertex();
 
 };
 

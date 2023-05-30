@@ -18,28 +18,24 @@ Graph::Graph(const std::string path)
 	{
 		if (path.find(".mis") != std::string::npos) // If file is of type .mis
 		{
-			std::ifstream file;
-			file.open(path);
 			// First line of the .mis file has number of edges and number of vertices
 			file >> this->m >> this->n;
+			// We will resize the adj_list to the number of vertices
+			this->adj_list.resize(this->n);
 			int w; // Variable to receive the vertices weight
-			int i; // Counter
+			std::size_t i; // Counter
 			for (i = 0; i < this->n; i += 1)
 			{
 				// The next line of the .mis file has the node weights as 1
 				// As we don't work with node weights, we just
 				// read them and do nothing
 				file >> w;
-			}
-			// We will resize the adj_list to the number of vertices
-			this->adj_list.resize(this->n);
-			// We will add the own vertex to the list of each position
-			for (i = 0; i < this->n; i += 1)
-			{
+				// We will add the own vertex to the list of each position
 				this->adj_list[i].push_back(i + 1);
 			}
+
 			// The next m lines have the edges (u,v)
-			int u, v;
+			std::size_t u, v;
 			for (i = 0; i < this->m; i += 1)
 			{
 				// In the file, first vertex = 1
@@ -52,8 +48,6 @@ Graph::Graph(const std::string path)
 		}
 		else if (path.find(".clq") != std::string::npos) // If file is of type .clq
 		{
-			std::ifstream file;
-			file.open(path);
 			// First line of the .clq file has the format
 			// p edge #vertices #edges
 			char input_char;
@@ -62,7 +56,7 @@ Graph::Graph(const std::string path)
 			// We will resize the adj_list to the number of vertices
 			this->adj_list.resize(this->n);
 			// We will add the own vertex to the list of each position
-			int i; // Counter
+			std::size_t i; // Counter
 			for (i = 0; i < this->n; i += 1)
 			{
 				this->adj_list[i].push_back(i + 1);
@@ -71,7 +65,7 @@ Graph::Graph(const std::string path)
 			// e u v
 			// where e is a char (will read to variable input_char)
 			// (u,v) is an edge
-			int u, v;
+			std::size_t u, v;
 			for (i = 0; i < this->m; i += 1)
 			{
 				// In the file, first vertex = 1
@@ -101,11 +95,11 @@ void Graph::calculate_max_min_degree()
 	this->min_degree = std::numeric_limits<int>::max();
 	// Maximum degree starts as zero, as it can't be lower than this
 	this->max_degree = 0;
-	int i; // Counter
-	int deg; // Current degree
+	std::size_t i; // Counter
+	std::size_t deg; // Current degree
 	for (i = 0; i < this->n; i += 1)
 	{
-		deg = (int)this->adj_list[i].size();
+		deg = this->adj_list[i].size();
 		if (deg > this->max_degree)
 		{
 			this->max_degree = deg;
@@ -124,8 +118,7 @@ void Graph::printGraphInfo()
 	std::cout << "Number of edges: " << this->m << std::endl;
 	std::cout << "Maximum degree: " << this->max_degree << std::endl;
 	std::cout << "Minimum degree: " << this->min_degree << std::endl;
-	int i; // Node counter
-	int j = 1; // Edge counter
+	std::size_t i; // Node counter
 	for (i = 0; i < this->n; i += 1)
 	{
 		// Print the lists
@@ -136,6 +129,13 @@ void Graph::printGraphInfo()
 		std::cout << "NULL" << std::endl;
 	}
 }
+
+//int Graph::getMaxDegreeVertex()
+//{
+//	int i = 0; // Counter
+//	while(this->adj_list[i].si)
+//	return 0;
+//}
 
 void Graph::removeVertex(const int v)
 {
