@@ -13,9 +13,9 @@
 struct Graph 
 {
 	// We declare the neighborhood type as a list of ints
-	typedef std::list<int> neighborhood;
+	typedef std::list<std::size_t> neighborhood;
 	// We declare the graph type as a map of integers (vertice id) to its neighborhood
-	typedef std::map<int, neighborhood> graph;
+	typedef std::map<std::size_t, neighborhood> graph;
 
 	// Graph attributes
 	
@@ -31,9 +31,9 @@ struct Graph
 	// Prints the graph information
 	void printGraphInfo();
 	// Remove a vertex from the graph
-	void removeVertex(const int);
+	void removeVertex(const std::size_t);
 	// Gets closed neighborhood of a vertex
-	Graph::neighborhood ClosedNeighborhood(const int);
+	Graph::neighborhood ClosedNeighborhood(const std::size_t);
 
 };
 

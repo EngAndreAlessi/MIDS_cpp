@@ -21,7 +21,7 @@ Graph::Graph(const std::string path)
 		{
 			// First line of the .mis file has number of edges and number of vertices
 			file >> m >> n;
-			int w; // Variable to receive the vertices weight
+			std::size_t w; // Variable to receive the vertices weight
 			std::size_t i; // Counter
 			for (i = 0; i < n; i += 1)
 			{
@@ -36,7 +36,8 @@ Graph::Graph(const std::string path)
 			for (i = 0; i < m; i += 1)
 			{
 				file >> u >> v;
-				this->g[i].push_back(v);
+				this->g[u].push_back(v);
+				this->g[v].push_back(u);
 			}
 
 		}
@@ -55,7 +56,8 @@ Graph::Graph(const std::string path)
 			for (i = 0; i < m; i += 1)
 			{
 				std::cin >> input_char >> u >> v;
-				this->g[v].push_back(v);
+				this->g[u].push_back(v);
+				this->g[v].push_back(u);
 			}
 		}
 		file.close();
@@ -74,7 +76,7 @@ void Graph::printGraphInfo()
 	for (Iter = this->g.begin(); Iter != this->g.end(); Iter++)
 	{
 		std::cout << Iter->first << "->";
-		for (int i : Iter->second)
+		for (std::size_t i : Iter->second)
 		{
 			std::cout << i << "->";
 		}
@@ -82,7 +84,7 @@ void Graph::printGraphInfo()
 	}
 }
 
-void Graph::removeVertex(const int v)
+void Graph::removeVertex(const std::size_t v)
 {
 	this->g.erase(v);
 	Graph::graph::iterator Iter;
@@ -92,7 +94,7 @@ void Graph::removeVertex(const int v)
 	}
 }
 
-inline Graph::neighborhood Graph::ClosedNeighborhood(const int v)
+inline Graph::neighborhood Graph::ClosedNeighborhood(const std::size_t v)
 {
 	return this->g.at(v);
 }
