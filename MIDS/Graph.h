@@ -1,45 +1,41 @@
 #pragma once
 #include <list>
-#include <vector>
 #include <string>
 #include <fstream>
 #include <iostream>
 #include <limits>
+#include <map>
+#include <tuple>
+#include <algorithm>
 
 // Everything is public as this is only a scientific experiment
 // So I declare Graph as a struct, not a class
 struct Graph 
 {
-	// We define the adjacency list type as a vector of lists of int
-	typedef std::vector<std::list<std::size_t>> AdjList;
+	// We declare the neighborhood type as a list of ints
+	typedef std::list<int> neighborhood;
+	// We declare the graph type as a map of integers (vertice id) to its neighborhood
+	typedef std::map<int, neighborhood> graph;
 
 	// Graph attributes
 	
-	// Adjacency list
-	AdjList adj_list;
-	// Number of vertices
-	std::size_t n;
-	// Number of edges
-	std::size_t m;
+	// Graph itself
+	graph g;
 	// Instance name
 	std::string instance_name;
-	// Maximum vertex degree
-	std::size_t max_degree;
-	// Minimum vertex degree
-	std::size_t min_degree;
 
 	// Graph functions
 	
 	// Constructor method, will read a .mis or .clq file and build the graph
 	Graph(const std::string);
-	// Calculates the maximum and minimum vertex degree of the graph
-	void calculate_max_min_degree();
 	// Prints the graph information
 	void printGraphInfo();
 	// Remove a vertex from the graph
 	void removeVertex(const int);
-	// Gets one of the vertices with max_degree
-	std::size_t getMaxDegreeVertex();
+	// Gets closed neighborhood of a vertex
+	Graph::neighborhood ClosedNeighborhood(const int);
 
 };
+
+
 
