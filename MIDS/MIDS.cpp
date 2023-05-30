@@ -8,5 +8,6 @@ int main()
     Graph * const graph = new Graph(path);
     graph->removeVertex(2);
     graph->printGraphInfo();
+    std::cout << graph->getMaxDegreeVertex() << std::endl;
     return 0;
 }

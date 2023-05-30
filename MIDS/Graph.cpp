@@ -99,7 +99,7 @@ void Graph::calculate_max_min_degree()
 	std::size_t deg; // Current degree
 	for (i = 0; i < this->n; i += 1)
 	{
-		deg = this->adj_list[i].size();
+		deg = this->adj_list[i].size() - 1;
 		if (deg > this->max_degree)
 		{
 			this->max_degree = deg;
@@ -122,7 +122,7 @@ void Graph::printGraphInfo()
 	for (i = 0; i < this->n; i += 1)
 	{
 		// Print the lists
-		for (int v : this->adj_list[i])
+		for (std::size_t v : this->adj_list[i])
 		{
 			std::cout << v << "->";
 		}
@@ -130,12 +130,15 @@ void Graph::printGraphInfo()
 	}
 }
 
-//int Graph::getMaxDegreeVertex()
-//{
-//	int i = 0; // Counter
-//	while(this->adj_list[i].si)
-//	return 0;
-//}
+std::size_t Graph::getMaxDegreeVertex()
+{
+	std::size_t i = 0; // Counter
+	while (this->adj_list[i].size() - 1 != this->max_degree)
+	{
+		i += 1;
+	}
+	return this->adj_list[i].front();
+}
 
 void Graph::removeVertex(const int v)
 {

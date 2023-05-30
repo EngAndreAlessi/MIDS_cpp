@@ -11,7 +11,7 @@
 struct Graph 
 {
 	// We define the adjacency list type as a vector of lists of int
-	typedef std::vector<std::list<int>> AdjList;
+	typedef std::vector<std::list<std::size_t>> AdjList;
 
 	// Graph attributes
 	
@@ -39,7 +39,7 @@ struct Graph
 	// Remove a vertex from the graph
 	void removeVertex(const int);
 	// Gets one of the vertices with max_degree
-	int getMaxDegreeVertex();
+	std::size_t getMaxDegreeVertex();
 
 };
 
